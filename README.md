@@ -8,5 +8,8 @@ Lancer l'index.html
 ## Créateurs
 Vincent, Eric, Catherine, Hugo
 
+## Avancement
+L'application est en cours de finalisation
+
 ## License
 Simplon Sud 2023
