@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifumi - VECH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Shifumi Vech</h1>
+    <p class="titre">Lorem ipsum dolor sit amet.</p>
+
+    <section class="start">
+        <button class="play">Jouez !</button>
+    </section>
+    
+    <section class="none choixJoueur">
+        <h2>Choisissez un adversaire</h2>
+        <div class="row">
+            <button class="ia sizeButton">Contre l'IA Cepheus</button>
+            <button class="jvj sizeButton">Contre un joueur</button>
+        </div>
+    </section>
+
+    <section class="none formJoueur1">
+        <h2>Pseudo</h2>
+        <form>
+            <label for="inputPseudo1">Joueur 1 entrez votre pseudo </label>    
+            <input type="text" value="" name="inputPseudo1" id="inputPseudo1">
+            <button type="button" id="pseudo1Button">Go !</button>
+        </form>
+    </section>
+
+    <section class="none formJoueur2">
+        <h2>Pseudo</h2>   
+        <form >
+            <label for="inputPseudo2">Joueur 2 entrez votre pseudo </label>    
+            <input type="text" value="" name="inputPseudo2" id="inputPseudo2">
+            <button type="button" id="pseudo2Button">Go !</button>
+        </form>
+
+    </section>
+    <section class="none plateau" id="choixArme" >
+        <div class="plateau-layout">
+            <div class="pseudos-points-layout">
+                <div class="pseudos-points">
+                    <div class="pseudo-joueur1">Invité 1</div>
+                    <div class="points-joueur1">0 pts</div>
+                </div>
+                <div class="pseudos-points">
+                    <div class="pseudo-joueur2">Cepheus</div>
+                    <div class="points-joueur2">0 pts</div>
+                </div>
+            </div>
+            <h2 class="pas_a_pas">Choisissez votre arme</h2>
+            <div class="images">
+                <figure>
+                    <img alt="feuille" class="arme feuille" src="img/choix0.png" data-index = "0">
+                    <figcaption>Feuille</figcaption>
+                </figure>
+                <figure>
+                    <img alt="Pierre" class="arme pierre" src="img/choix1.png" data-index="1">
+                    <figcaption>Pierre</figcaption>
+                </figure>
+                <figure>
+                    <img alt="ciseaux" class="arme ciseaux" src="img/choix2.png" data-index="2">
+                    <figcaption>Ciseaux</figcaption>
+                </figure>
+            </div>
+            <div class="messages">
+                <div class="message-jeu">Test message</div>
+                <div class="message-jeu2">message2</div>
+            </div>
+        </div>
+    </section><!-- fin .plateau-->
+
+    <section class="none" id="combat">
+        <div class="row">
+            <div>
+                <h2>Hugo</h2>
+                <figure>
+                    <img alt="votre choix" src="img/feuille.png">
+                    <figcaption>Votre arme</figcaption>
+                </figure>
+            </div>
+            <div>
+                <h2>Cathy</h2>
+                <figure>
+                    <img alt="resultat de l'adversaire" src="img/pierre.png">
+                    <figcaption>Arme de l'ardversaire</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <section class="none" id="resultat">
+        <div class="row">
+            <div>
+                <h2>Hugo</h2>
+                <figure>
+                    <img alt="votre resultat" src="img/true.png">
+                    <figcaption>Gagnant</figcaption>
+                </figure>
+            </div>
+            <div>
+                <h2>Cathy</h2>
+                <figure>
+                    <img alt="resultat de l'adversaire" src="img/false.png">
+                    <figcaption>Perdant</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p></p>
+        
+        <img alt="logo main en forme de ciseaux" src="img/logo-chifoumi-avril-2023-transparent.png">
+        
+        <p>Vech<br>
+        &copy; 2023</p>
+    </footer>
+    <script src="js/algo.js"></script>
+
+
+
+    <!-- <script>
+        // const sections = document.querySelectorAll("section")
+        // sections.forEach(element => {
+        //     console.log(element)
+        //     element.style.display="none";
+        // });
+        const start = document.querySelector(".start")
+        const playButton = document.querySelector(".play")
+       
+        playButton.addEventListener("click", play);
+        const choixJoueur = document.querySelector(".choixJoueur") 
+        function play(){
+            choixJoueur.classList.toggle("none")
+            start.classList.toggle("none")
+        }
+
+        const ia = document.querySelector(".ia")
+        ia.addEventListener("click", joueurContreIa)
+        function joueurContreIa(){
+            const formJoueur1 = document.querySelector(".formJoueur1")
+            formJoueur1.classList.toggle("none")
+            choixJoueur.classList.toggle("none")
+        }
+
+        const jvj = document.querySelector(".jvj")
+        jvj.addEventListener("click", joueurContreJoueur)
+        function joueurContreJoueur(){
+            joueurContreIa()
+            const formJoueur2 = document.querySelector(".buttonJoueur2")
+            formJoueur2.classList.toggle("none")
+        }
+
+        const buttonIA = document.querySelector("#buttonIA")
+        buttonIA.addEventListener("click", pseudo)
+
+    </script> -->
+    
+</body>
+</html>

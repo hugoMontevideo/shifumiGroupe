@@ -1,0 +1,299 @@
+/* /---------------------// FONTS //---------------------/ */
+/*https://fonts.google.com/specimen/Caveat*/
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+/* ////---------------------/// BODY ///---------------------//// */
+body {
+    display: flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #212325;
+    color:#fff;
+    font-size: 1em;
+    margin-bottom: 100px;
+    box-sizing: border-box;
+}
+
+/* ////---------------------/// NONE ///---------------------//// */
+
+.none{
+    display: none;
+}
+
+
+/* ////---------------------/// LIEN GENERAL ///---------------------//// */
+a {
+    color: #572af8;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    color:#4329a3;
+    text-decoration: underline;
+}
+/* ////---------------------/// BALISES TEXTE ///---------------------//// */
+h1{
+    font-size: 4em;
+    font-family: 'Caveat', cursive;
+    color:#fff;
+    margin: .3em 0 0;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-family: 'Caveat', cursive;
+    margin: 0 0 .2em;
+}
+
+p {
+    margin-top: 0;
+}
+
+ul, div {
+    margin:0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.borderRadius li{
+    border: 2px solid #bbb;
+    border-radius: 30px;
+    margin: 10px;
+    padding-top: 10px;
+    height: 40px;
+    text-align: center;
+}
+
+/* /-------// LES FORMULAIRES ET LES BOUTONS //-------/ */
+form {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+}
+
+.sizeButton{
+    width: auto;
+}
+
+label {
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+fieldset { 
+    display: flex;
+    flex-direction:column;
+    align-items: center;   
+    border: none;  
+    padding: 1em;
+}
+
+input {
+    border: 2px solid #bdbdc1;
+    margin: 0;
+    font-size: 1em;
+    border-radius: 6px;
+    padding: 8px 12px;
+    width: 20%;
+    background-color: rgba(255, 255, 255, 0.329);
+}
+
+button {
+    border-color:#572af8;
+    background-color: #572af8;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 1.5em;
+    border: none;
+    width:20%;
+    height:50px;
+    cursor: pointer;
+    padding: 0.5em;
+    margin: 1em;
+    -webkit-transition: background-color 1s; /* Pour la transition entre le passages des deux couleurs*/
+    -moz-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+button:hover { 
+    background-color:  #4329a3;
+}
+
+/* ////---------------------/// IMAGE ///---------------------//// */
+img{
+    width: 160px;
+    padding: 0;
+    margin: 0;
+}
+
+figure{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+figcaption{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 1em 0;
+    font-size: 1.5em;
+}
+/* ////---------------------/// SECTION ///---------------------//// */
+section {
+    width: 100%;
+    min-height: 60vh;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+/* section div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+} */
+
+.row{
+    padding: 0;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.plateau{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .plateau div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+} */
+.plateau.none{
+    display: none;
+}
+.plateau-layout{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.pseudos-points-layout{
+    display: flex;
+    justify-content: space-between;
+}
+.pseudo-joueur1{
+    font-family: 'Caveat', cursive;
+    font-size: 2.2em;
+    color: rgb(241, 136, 136);
+}
+.pseudo-joueur2{
+    font-family: 'Caveat', cursive;
+    font-size: 2.2em;
+    color: rgb(136, 241, 159);
+}
+.images{
+    width: 100%;
+    display: flex;
+
+}
+.message-jeu{
+    background-color: rgba(230, 136, 119, 0.301);
+    padding: 1em 0;
+}
+/* ////---------------------/// FOOTER ///---------------------//// */
+footer {
+    position: fixed;
+    z-index: 999;
+    background-color: transparent;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 95%;
+    bottom: 0;
+}
+footer img{
+    width: 30px;
+    left: 0;
+}
+footer p{
+    padding: 0;
+    padding-top: 5px;
+}
+
+/* /--------// @MEDIA-QUERIES TABLETTE 850PX //-------/ */
+@media (max-width: 850px) {
+
+    section {
+        flex-direction: column;
+    }
+
+    #combat, #resultat {
+        flex-direction: row;
+        padding: 0;
+    }
+
+    h1{
+        font-size: 4.5em;
+    }
+
+    h2{
+        font-size: 3em;
+    }
+
+    button, input, figcaption, label {
+        font-size: 1em;
+    }
+
+    button, input {
+        width: 60%;
+    }
+
+    .sizeButton{
+        width: 60%;
+    }
+
+}
+/* /--------// @MEDIA-QUERIES TABLETTE 650PX //-------/ */
+@media (max-width: 650px){
+   
+    img{
+        width: 200px;
+    }
+
+
+}
+
+/* /--------// @MEDIA-QUERIES TABLETTE 650PX //-------/ */
+@media (max-width: 600px){
+   
+    #choixArme img{
+        width: 30%;
+    }
+
+
+}
